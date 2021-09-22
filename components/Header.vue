@@ -6,26 +6,34 @@
                 <img src="../assets/gstv.png" class="header__menu-icon w-10" />
                 <div class="header__seperator-line"></div>
                 <div class="header__menu-section">
+                    <a href="https://www.facebook.com/Galatasaray/">
                     <FontAwesomeIcon 
                         :icon="['fab','facebook']" 
                         class="header__menu-icon" 
                         size="lg"
                     />
+                    </a>
+                    <a href="https://twitter.com/GalatasaraySK">
                     <FontAwesomeIcon 
                         :icon="['fab','twitter']" 
                         class="header__menu-icon" 
                         size="lg"
                     />
+                    </a>
+                    <a href="https://www.instagram.com/galatasaray/">
                     <FontAwesomeIcon 
                         :icon="['fab','instagram']" 
                         class="header__menu-icon" 
                         size="lg"
                     />
+                    </a>
+                    <a href="https://www.youtube.com/user/2galatasaray">
                     <FontAwesomeIcon 
                         :icon="['fab','youtube']" 
                         class="header__menu-icon" 
                         size="lg"
                     />
+                    </a>
                 </div>
                 <div class="header__seperator-line"></div>
                 <a href="#" class="header__menu-icon">TR</a>
