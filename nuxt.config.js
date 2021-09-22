@@ -42,6 +42,8 @@ export default {
     '@nuxtjs/i18n',
   ],
   i18n: {
+    lazy: true,
+    langDir: "lang/",
     locales: [
       {code: 'en', iso: 'en-US', file: 'en.js'},
       {code: 'tr', iso: 'tr-TR', file: 'tr.js'},

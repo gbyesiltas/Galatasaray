@@ -36,17 +36,17 @@
                     </a>
                 </div>
                 <div class="header__seperator-line"></div>
-                <a href="#" class="header__menu-icon">TR</a>
+                <a href="#" class="header__menu-icon">EN</a>
             </div>
             <div class="header__menu-section">
-                <a href="#" class="header__menu-title">GALATASARAY SK</a>
-                <a href="#" class="header__menu-title">FUTBOL</a>
-                <a href="#" class="header__menu-title">BASKETBOL</a>
-                <a href="#" class="header__menu-title">VOLEYBOL</a>
-                <a href="#" class="header__menu-title">BRANSLAR</a>
-                <a href="#" class="header__menu-title">TESISLER</a>
+                <a href="#" class="header__menu-title">GALATASARAY</a>
+                <a href="#" class="header__menu-title">{{$t('header.football')}}</a>
+                <a href="#" class="header__menu-title">{{$t('header.basketball')}}</a>
+                <a href="#" class="header__menu-title">{{$t('header.volleyball')}}</a>
+                <a href="#" class="header__menu-title">{{$t('header.branches')}}</a>
+                <a href="#" class="header__menu-title">{{$t('header.facilities')}}</a>
                 <a href="#" class="header__menu-title">GSSTORE</a>
-                <a href="#" class="header__menu-title">TARIHCE</a>
+                <a href="#" class="header__menu-title">{{$t('header.history')}}</a>
             </div>
         </div>
     </div>
