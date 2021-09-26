@@ -1,7 +1,7 @@
 <template>
   <div class="bg-black">
     <Header />
-    <NewsBlock />
+    <HomeBanner />
     <Footer />
   </div>
 </template>
@@ -10,13 +10,13 @@
 import Vue from 'vue'
 
 import Header from "../components/Header.vue";
-import NewsBlock from "../components/NewsBlock.vue";
+import HomeBanner from "../components/HomeBanner.vue";
 import Footer from "../components/Footer.vue";
 
 export default Vue.extend({
   components: {
     Header,
-    NewsBlock,
+    HomeBanner,
     Footer,
   }
 })
