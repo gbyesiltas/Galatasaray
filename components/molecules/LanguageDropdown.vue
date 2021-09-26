@@ -1,7 +1,7 @@
 <template>
     <button class="dropdown" @click="toggleDropdown">
         <div>
-            <p v-show="!showDropdown" class="">{{selectedLanguage}}</p>
+            <p v-show="!showDropdown" class="dropdown__selected-language">{{selectedLanguage}}</p>
             <FontAwesomeIcon icon="chevron-down" size="lg"/>
         </div>
         
@@ -48,11 +48,13 @@ export default defineComponent({
     .dropdown {
         @apply flex flex-col items-center;
         &__options {
-            @apply w-14 bg-black absolute z-10 border border-yellow-500 flex flex-col items-center;
-            top: -0.1rem;
+            @apply top-2 w-14 bg-black absolute z-10 border border-t-0 border-yellow-500 flex flex-col items-center;
         }
         &__lang-option {
             @apply border-b border-yellow-500 hover:bg-gray-500 w-full;
+        }
+        &__selected-language {
+            @apply top-2 relative;
         }
     }
 </style>
