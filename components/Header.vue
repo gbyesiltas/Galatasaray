@@ -5,52 +5,34 @@
             <div class="header__menu-section">
                 <img src="../assets/gstv.png" class="header__menu-icon w-10" />
                 <div class="header__seperator-line"></div>
-                <div class="header__menu-section">
-                    <a href="https://www.facebook.com/Galatasaray/">
-                    <FontAwesomeIcon 
-                        :icon="['fab','facebook']" 
-                        class="header__menu-icon" 
-                        size="lg"
-                    />
-                    </a>
-                    <a href="https://twitter.com/GalatasaraySK">
-                    <FontAwesomeIcon 
-                        :icon="['fab','twitter']" 
-                        class="header__menu-icon" 
-                        size="lg"
-                    />
-                    </a>
-                    <a href="https://www.instagram.com/galatasaray/">
-                    <FontAwesomeIcon 
-                        :icon="['fab','instagram']" 
-                        class="header__menu-icon" 
-                        size="lg"
-                    />
-                    </a>
-                    <a href="https://www.youtube.com/user/2galatasaray">
-                    <FontAwesomeIcon 
-                        :icon="['fab','youtube']" 
-                        class="header__menu-icon" 
-                        size="lg"
-                    />
-                    </a>
-                </div>
+                <HeaderSocials class="header__menu-section" />
                 <div class="header__seperator-line"></div>
-                <a href="#" class="header__menu-icon">EN</a>
+                <a href="#" class="header__menu-icon">
+                    <LanguageDropdown />
+                </a>
             </div>
-            <div class="header__menu-section">
-                <a href="#" class="header__menu-title">GALATASARAY</a>
-                <a href="#" class="header__menu-title">{{$t('header.football')}}</a>
-                <a href="#" class="header__menu-title">{{$t('header.basketball')}}</a>
-                <a href="#" class="header__menu-title">{{$t('header.volleyball')}}</a>
-                <a href="#" class="header__menu-title">{{$t('header.branches')}}</a>
-                <a href="#" class="header__menu-title">{{$t('header.facilities')}}</a>
-                <a href="#" class="header__menu-title">GSSTORE</a>
-                <a href="#" class="header__menu-title">{{$t('header.history')}}</a>
-            </div>
+            <HeaderMenuItems class="header__menu-section" />
         </div>
     </div>
 </template>
+
+<script>
+import { defineComponent } from '@vue/composition-api'
+import HeaderMenuItems from "~/components/molecules/HeaderMenuItems.vue";
+import HeaderSocials from "~/components/molecules/HeaderSocials.vue";
+import LanguageDropdown from "~/components/molecules/LanguageDropdown.vue";
+
+export default defineComponent({
+    components: {
+        HeaderMenuItems,
+        HeaderSocials,
+        LanguageDropdown,
+    },
+    setup() {
+        
+    },
+})
+</script>
 
 <style lang="postcss" scoped>
 .header{
@@ -66,9 +48,6 @@
     }
     &__menu-icon {
         @apply text-yellow-500 cursor-pointer;
-    }
-    &__menu-title {
-        @apply text-yellow-500 text-xs cursor-pointer;
     }
     &__seperator-line {
         @apply w-px h-8 bg-yellow-500;
