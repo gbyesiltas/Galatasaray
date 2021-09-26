@@ -3,9 +3,9 @@ export default {
         football: "FUTBOL",
         basketball: "BASKETBOL",
         volleyball: "VOLEYBOL",
-        branches: "BRANSLAR",
-        facilities: "TESISLER",
-        history: "TARIHCE",
+        branches: "BRANŞLAR",
+        facilities: "TESİSLER",
+        history: "TARİHÇE",
     }
 };
   
