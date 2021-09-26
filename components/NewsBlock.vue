@@ -4,10 +4,10 @@
         <div class="news-content">
             <div class="news-content-left">
                 <h1 class="news-title">
-                    SON DAKIKA
+                    FİKRİ HÜR
                 </h1>
                 <h1 class="news-title">
-                    COK IYI BI SEYLER OLDU
+                    VİCDANI HÜR
                 </h1>
             </div>
         </div>
