@@ -1,37 +1,42 @@
 <template>
     <button class="dropdown" @click="toggleDropdown">
         <div>
-            <p v-show="!showDropdown" class="">EN</p>
+            <p v-show="!showDropdown" class="">{{selectedLanguage}}</p>
             <FontAwesomeIcon icon="chevron-down" size="lg"/>
         </div>
         
         <div v-show="showDropdown" class="dropdown__options">
-            <div class="dropdown__lang-option">
+            <nuxt-link :to="switchLocalePath('en')" class="dropdown__lang-option">
                 <p>EN</p>
-            </div>
-            <div class="dropdown__lang-option">
+            </nuxt-link>
+            <nuxt-link :to="switchLocalePath('tr')" class="dropdown__lang-option">
                 <p>TR</p>
-            </div>
-            <div class="dropdown__lang-option">
+            </nuxt-link>
+            <nuxt-link :to="switchLocalePath('fr')" class="dropdown__lang-option">
                 <p>FR</p>
+            </nuxt-link>
+            <div class="py-2">
+                <FontAwesomeIcon icon="chevron-up" size="lg"/>
             </div>
-            <FontAwesomeIcon icon="chevron-up" size="lg"/>
         </div>
         
     </button>
 </template>
 
 <script lang="ts">
-import { defineComponent, ref } from '@nuxtjs/composition-api'
+import { defineComponent, ref, useContext } from '@nuxtjs/composition-api'
 
 export default defineComponent({
     setup() {
-    console.log("something");
+      const context = useContext();
+
       const showDropdown = ref(false);
+      const selectedLanguage = ref(context.app.i18n.locale.toUpperCase());
       const toggleDropdown = () => {
           showDropdown.value = !showDropdown.value;
       };
       return {
+          selectedLanguage,
           showDropdown,
           toggleDropdown,
       }
@@ -43,10 +48,11 @@ export default defineComponent({
     .dropdown {
         @apply flex flex-col items-center;
         &__options {
-            @apply w-12 bg-black absolute z-10 border border-yellow-500;
+            @apply w-14 bg-black absolute z-10 border border-yellow-500 flex flex-col items-center;
+            top: -0.1rem;
         }
         &__lang-option {
-            @apply border-b border-yellow-500;
+            @apply border-b border-yellow-500 hover:bg-gray-500 w-full;
         }
     }
 </style>

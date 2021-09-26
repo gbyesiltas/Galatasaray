@@ -48,7 +48,7 @@ export default {
     langDir: "lang/",
     locales: [
       {code: 'en', iso: 'en-US', file: 'en.js'},
-      {code: 'tr', iso: 'tr-TR', file: 'tr.js'},
+    {code: 'tr', iso: 'tr-TR', file: 'tr.js'},
       {code: 'fr', iso: 'fr-FR', file: 'fr.js'},
     ],
     defaultLocale: 'en',
