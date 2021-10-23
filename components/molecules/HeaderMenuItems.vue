@@ -13,6 +13,6 @@
 
 <style lang="postcss" scoped>
     .menu-title {
-        @apply text-yellow-500 text-xs cursor-pointer;
+        @apply text-yellow-500 text-xs cursor-pointer py-4 px-2 hover:bg-gray-900;
     }
 </style>
