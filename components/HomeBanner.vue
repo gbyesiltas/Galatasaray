@@ -23,7 +23,7 @@
 <style lang="postcss" scoped>
 .banner{
     &__background{
-        @apply w-full bg-red-800;
+        @apply w-full bg-gala-red;
         height: 30rem;
         filter: grayscale(30%);
     }
@@ -45,14 +45,14 @@
         }
     }
     &__bottom{
-        @apply h-64 w-full bg-yellow-500 flex items-center;
+        @apply h-64 w-full bg-gala-yellow flex items-center;
         filter: grayscale(30%);
     }
     &__bottom-left{
         @apply flex flex-col;
     }
     &__title{
-        @apply font-bold text-red-800 text-4xl ml-24;
+        @apply font-bold text-gala-red text-4xl ml-24;
     }
 }
 </style>

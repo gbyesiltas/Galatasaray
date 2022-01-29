@@ -47,10 +47,10 @@ export default defineComponent({
         @apply flex space-x-4 relative h-full items-center;
     }
     &__menu-icon {
-        @apply text-yellow-500 cursor-pointer;
+        @apply text-gala-yellow cursor-pointer;
     }
     &__seperator-line {
-        @apply w-px h-8 bg-yellow-500;
+        @apply w-px h-8 bg-gala-yellow;
     }
 }
 

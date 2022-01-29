@@ -33,6 +33,6 @@
 
 <style lang="postcss" scoped>
     .menu-icon {
-        @apply text-yellow-500 cursor-pointer;
+        @apply text-gala-yellow cursor-pointer;
     }
 </style>

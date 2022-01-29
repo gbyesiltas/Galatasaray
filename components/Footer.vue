@@ -6,7 +6,7 @@
 
 <style lang="postcss" scoped>
 .footer{
-    @apply h-24 bg-black flex items-center text-yellow-500;
+    @apply h-24 bg-black flex items-center text-gala-yellow;
 }
 
 </style>

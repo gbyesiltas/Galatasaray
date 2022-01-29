@@ -1,3 +1,11 @@
- // tailwind.config.js
+const colors = require('tailwindcss/colors')
 
- // TODO: read more about this: https://tailwindcss.com/docs/configuration
+module.exports = {
+    theme: {
+      colors: {
+        ...colors,
+        'gala-red': '#A90432',
+        'gala-yellow': '#FDB912',
+      },
+    },
+  }

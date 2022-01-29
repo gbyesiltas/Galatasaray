@@ -48,10 +48,10 @@ export default defineComponent({
     .dropdown {
         @apply flex flex-col items-center;
         &__options {
-            @apply top-2 w-14 bg-black absolute z-10 border border-t-0 border-yellow-500 flex flex-col items-center;
+            @apply top-2 w-14 bg-black absolute z-10 border border-t-0 border-gala-yellow flex flex-col items-center;
         }
         &__lang-option {
-            @apply border-b border-yellow-500 hover:bg-gray-900 w-full;
+            @apply border-b border-gala-yellow hover:bg-gray-900 w-full;
         }
         &__selected-language {
             @apply top-2 relative;
