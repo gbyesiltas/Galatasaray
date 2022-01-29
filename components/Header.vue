@@ -1,9 +1,9 @@
 <template>
     <div class="header">
-        <img src="../assets/gala-logo.png" class="header__gala-logo"/>
+        <nuxt-img src="/gala-logo.png" class="header__gala-logo"/>
         <div class="header__menu-sections">
             <div class="header__menu-section">
-                <img src="../assets/gstv.png" class="header__menu-icon w-10" />
+                <nuxt-img src="/gstv.png" class="header__menu-icon w-10" />
                 <div class="header__seperator-line"></div>
                 <HeaderSocials class="header__menu-section" />
                 <div class="header__seperator-line"></div>

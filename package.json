@@ -21,6 +21,7 @@
     "postcss-nested": "^5.0.6"
   },
   "devDependencies": {
+    "@nuxt/image": "^0.6.0",
     "@nuxt/types": "^2.15.7",
     "@nuxt/typescript-build": "^2.1.0",
     "@nuxtjs/tailwindcss": "^4.2.0",
