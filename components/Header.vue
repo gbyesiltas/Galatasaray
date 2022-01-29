@@ -7,9 +7,9 @@
                 <div class="header__seperator-line"></div>
                 <HeaderSocials class="header__menu-section" />
                 <div class="header__seperator-line"></div>
-                <a href="#" class="header__menu-icon">
+                <div href="#" class="header__menu-icon">
                     <LanguageDropdown />
-                </a>
+                </div>
             </div>
             <HeaderMenuItems class="header__menu-section" />
         </div>
@@ -17,12 +17,12 @@
 </template>
 
 <script>
-import { defineComponent } from '@vue/composition-api'
+import { defineComponent as dc } from '#imports'
 import HeaderMenuItems from "~/components/molecules/HeaderMenuItems.vue";
 import HeaderSocials from "~/components/molecules/HeaderSocials.vue";
 import LanguageDropdown from "~/components/molecules/LanguageDropdown.vue";
 
-export default defineComponent({
+export default dc({
     components: {
         HeaderMenuItems,
         HeaderSocials,

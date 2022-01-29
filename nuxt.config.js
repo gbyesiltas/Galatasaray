@@ -1,11 +1,16 @@
-export default {
+import { defineNuxtConfig } from '@nuxt/bridge'
+
+export default defineNuxtConfig({
+  typescript: {
+    shim: false
+  },
   ssr: true,
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'galatasaray',
     htmlAttrs: {
       lang: 'en'
-    },
+  },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -32,12 +37,8 @@ export default {
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
   buildModules: [
-    // https://go.nuxtjs.dev/typescript
-    '@nuxt/typescript-build',
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
-    // https://composition-api.nuxtjs.org/getting-started/setup
-    '@nuxtjs/composition-api/module',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -63,6 +64,20 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+    optimization: {
+      runtimeChunk: true,
+      splitChunks: {
+        name: true,
+        cacheGroups: {
+          styles: {
+            name: 'styles',
+            test: /.(css|vue)$/,
+            chunks: 'all',
+            enforce: true
+          }
+        }
+      }
+    },
     postcss: {
       plugins: {
         'postcss-nested': {},
@@ -74,4 +89,4 @@ export default {
       }
   }
 }
-}
+})

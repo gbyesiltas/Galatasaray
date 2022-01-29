@@ -23,12 +23,12 @@
     </button>
 </template>
 
-<script lang="ts">
-import { defineComponent, ref, useContext } from '@nuxtjs/composition-api'
-
-export default defineComponent({
+<script>
+import { defineComponent as dc } from '#imports';
+import { useNuxtApp } from '#app'
+export default dc({
     setup() {
-      const context = useContext();
+      const { nuxt2Context: context } = useNuxtApp();
 
       const showDropdown = ref(false);
       const selectedLanguage = ref(context.app.i18n.locale.toUpperCase());
