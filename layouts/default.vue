@@ -1,6 +1,8 @@
 <template>
-  <div>
-    <HomeBanner />
+  <div class="bg-black">
+    <Header />
+    <Nuxt />
+    <Footer />
   </div>
 </template>
 
@@ -8,13 +10,11 @@
 import Vue from 'vue'
 
 import Header from "../components/Header.vue";
-import HomeBanner from "../components/HomeBanner.vue";
 import Footer from "../components/Footer.vue";
 
 export default Vue.extend({
   components: {
     Header,
-    HomeBanner,
     Footer,
   }
 })

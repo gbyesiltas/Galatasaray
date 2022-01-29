@@ -1,7 +1,7 @@
 <template>
     <div>
-        <a href="#" class="menu-title">GALATASARAY</a>
-        <a href="#" class="menu-title">{{$t('header.football')}}</a>
+        <NuxtLink :to="`/`" class="menu-title">GALATASARAY </NuxtLink>
+        <NuxtLink :to="'/football'" class="menu-title">{{$t('header.football')}}</NuxtLink>
         <a href="#" class="menu-title">{{$t('header.basketball')}}</a>
         <a href="#" class="menu-title">{{$t('header.volleyball')}}</a>
         <a href="#" class="menu-title">{{$t('header.branches')}}</a>
