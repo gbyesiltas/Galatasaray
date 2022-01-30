@@ -24,14 +24,14 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, ref, useContext } from '@nuxtjs/composition-api'
+import { defineComponent, ref, useContext, computed } from '@nuxtjs/composition-api'
 
 export default defineComponent({
     setup() {
       const context = useContext();
 
       const showDropdown = ref(false);
-      const selectedLanguage = ref(context.app.i18n.locale.toUpperCase());
+      const selectedLanguage = computed(() => context.app.i18n.locale.toUpperCase());
       const toggleDropdown = () => {
           showDropdown.value = !showDropdown.value;
       };

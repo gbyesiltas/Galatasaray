@@ -2,12 +2,12 @@
     <div>
         <NuxtLink :to="`/`" class="menu-title">GALATASARAY </NuxtLink>
         <NuxtLink :to="'/football'" class="menu-title">{{$t('header.football')}}</NuxtLink>
-        <a href="#" class="menu-title">{{$t('header.basketball')}}</a>
-        <a href="#" class="menu-title">{{$t('header.volleyball')}}</a>
-        <a href="#" class="menu-title">{{$t('header.branches')}}</a>
-        <a href="#" class="menu-title">{{$t('header.facilities')}}</a>
-        <a href="#" class="menu-title">GSSTORE</a>
-        <a href="#" class="menu-title">{{$t('header.history')}}</a>
+        <NuxtLink :to="`/`" class="menu-title">{{$t('header.basketball')}}</NuxtLink>
+        <NuxtLink :to="`/`" class="menu-title">{{$t('header.volleyball')}}</NuxtLink>
+        <NuxtLink :to="`/`" class="menu-title">{{$t('header.branches')}}</NuxtLink>
+        <NuxtLink :to="`/`" class="menu-title">{{$t('header.facilities')}}</NuxtLink>
+        <NuxtLink :to="`/`" class="menu-title">GSSTORE</NuxtLink>
+        <NuxtLink :to="`/`" class="menu-title">{{$t('header.history')}}</NuxtLink>
     </div>
 </template>
 
