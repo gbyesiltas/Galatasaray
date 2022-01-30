@@ -2,19 +2,19 @@
     <div class="banner__block">
         <div class="banner__background">
             <div class="banner__image-container">
-            <img class="banner__image banner__image__hagi-uefa" src="/hagi-uefa.jpg" />
-            <img class="banner__image banner__image__taylan" src="/taylan.jpg" />
-            <img class="banner__image banner__image__lise" src="/lise.jpg" />
+            <img class="banner__image banner__image__hagi-uefa" src="/hagi-uefa.jpg" alt="hagi uefa" />
+            <img class="banner__image banner__image__taylan" src="/taylan.jpg" alt="taylan antalyali" />
+            <img class="banner__image banner__image__lise" src="/lise.jpg" alt="galatasaray lisesi" />
             </div>
         </div>
         <div class="banner__bottom">
             <div class="banner__bottom-left">
-                <h1 class="banner__title">
+                <div class="banner__title">
                     FİKRİ HÜR
-                </h1>
-                <h1 class="banner__title">
+                </div>
+                <div class="banner__title">
                     VİCDANI HÜR
-                </h1>
+                </div>
             </div>
         </div>
     </div>

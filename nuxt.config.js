@@ -41,6 +41,8 @@ export default {
     '@nuxtjs/tailwindcss',
     // https://composition-api.nuxtjs.org/getting-started/setup
     '@nuxtjs/composition-api/module',
+    // https://html-validator.nuxtjs.org
+    '@nuxtjs/html-validator',
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
