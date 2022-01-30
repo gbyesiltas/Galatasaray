@@ -1,9 +1,9 @@
 <template>
     <div class="header">
-        <img src="/gala-logo.png" class="header__gala-logo"/>
+        <img src="/gala-logo.png" alt="galatasaray logo" class="header__gala-logo"/>
         <div class="header__menu-sections">
             <div class="header__menu-section">
-                <img src="/gstv.png" class="header__menu-icon w-10" />
+                <img src="/gstv.png" alt="gs tv logo" class="header__menu-icon w-10" />
                 <div class="header__seperator-line"></div>
                 <HeaderSocials class="header__menu-section" />
                 <div class="header__seperator-line"></div>

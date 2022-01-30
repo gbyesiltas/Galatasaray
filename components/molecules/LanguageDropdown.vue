@@ -1,26 +1,24 @@
 <template>
-    <button class="dropdown" @click="toggleDropdown">
-        <div>
-            <p v-show="!showDropdown" class="dropdown__selected-language">{{selectedLanguage}}</p>
-            <FontAwesomeIcon icon="chevron-down" size="lg"/>
-        </div>
-        
-        <div v-show="showDropdown" class="dropdown__options">
+    <div class="dropdown" @click="toggleDropdown">
+        <button class="dropdown__button" type="button">
+                <span v-show="!showDropdown" class="dropdown__selected-language">{{selectedLanguage}}</span>
+                <FontAwesomeIcon icon="chevron-down" size="lg"/>
+        </button>
+        <span v-show="showDropdown" class="dropdown__options">
             <nuxt-link :to="switchLocalePath('en')" class="dropdown__lang-option">
-                <p>EN</p>
+                <span>EN</span>
             </nuxt-link>
             <nuxt-link :to="switchLocalePath('tr')" class="dropdown__lang-option">
-                <p>TR</p>
+                <span>TR</span>
             </nuxt-link>
             <nuxt-link :to="switchLocalePath('fr')" class="dropdown__lang-option">
-                <p>FR</p>
+                <span>FR</span>
             </nuxt-link>
-            <div class="py-2">
+            <span class="py-2">
                 <FontAwesomeIcon icon="chevron-up" size="lg"/>
-            </div>
-        </div>
-        
-    </button>
+            </span>
+        </span>
+    </div>
 </template>
 
 <script lang="ts">
@@ -47,11 +45,14 @@ export default defineComponent({
 <style lang="postcss" scoped>
     .dropdown {
         @apply flex flex-col items-center;
+        &__button {
+            @apply flex flex-col items-center;
+        }
         &__options {
             @apply top-2 w-14 bg-black absolute z-10 border border-t-0 border-gala-yellow flex flex-col items-center;
         }
         &__lang-option {
-            @apply border-b border-gala-yellow hover:bg-gray-900 w-full;
+            @apply border-b border-gala-yellow hover:bg-gray-900 w-full text-center;
         }
         &__selected-language {
             @apply top-2 relative;
