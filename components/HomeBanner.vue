@@ -2,9 +2,9 @@
     <div class="banner__block">
         <div class="banner__background">
             <div class="banner__image-container">
-            <nuxt-img class="banner__image banner__image__hagi-uefa" src="/hagi-uefa.jpg" />
-            <nuxt-img class="banner__image banner__image__taylan" src="/taylan.jpg" />
-            <nuxt-img class="banner__image banner__image__lise" src="/lise.jpg" />
+            <img class="banner__image banner__image__hagi-uefa" src="/hagi-uefa.jpg" />
+            <img class="banner__image banner__image__taylan" src="/taylan.jpg" />
+            <img class="banner__image banner__image__lise" src="/lise.jpg" />
             </div>
         </div>
         <div class="banner__bottom">

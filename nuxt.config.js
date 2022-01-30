@@ -6,6 +6,9 @@ export default {
     htmlAttrs: {
       lang: 'en'
     },
+    static: {
+      prefix: false
+    },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -43,7 +46,6 @@ export default {
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     '@nuxtjs/i18n',
-    '@nuxt/image',
   ],
   i18n: {
     lazy: true,

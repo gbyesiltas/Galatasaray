@@ -1,15 +1,15 @@
 <template>
     <div class="header">
-        <nuxt-img src="/gala-logo.png" class="header__gala-logo"/>
+        <img src="/gala-logo.png" class="header__gala-logo"/>
         <div class="header__menu-sections">
             <div class="header__menu-section">
-                <nuxt-img src="/gstv.png" class="header__menu-icon w-10" />
+                <img src="/gstv.png" class="header__menu-icon w-10" />
                 <div class="header__seperator-line"></div>
                 <HeaderSocials class="header__menu-section" />
                 <div class="header__seperator-line"></div>
-                <a href="#" class="header__menu-icon">
+                <div class="header__menu-icon">
                     <LanguageDropdown />
-                </a>
+                </div>
             </div>
             <HeaderMenuItems class="header__menu-section" />
         </div>
