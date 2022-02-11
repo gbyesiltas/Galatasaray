@@ -49,6 +49,7 @@ export default {
   modules: [
     '@nuxtjs/i18n',
   ],
+  components: true,
   i18n: {
     lazy: true,
     langDir: "lang/",

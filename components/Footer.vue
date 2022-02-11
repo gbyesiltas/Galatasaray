@@ -1,6 +1,6 @@
 <template>
     <div class="footer">
-        <h1 class="mr-16 w-full flex justify-end">made by GBY</h1>
+        <p class="mr-16 w-full flex justify-end">made by GBY</p>
     </div>
 </template>
 

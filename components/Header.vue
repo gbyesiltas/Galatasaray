@@ -16,24 +16,6 @@
     </div>
 </template>
 
-<script>
-import { defineComponent } from '@vue/composition-api'
-import HeaderMenuItems from "~/components/molecules/HeaderMenuItems.vue";
-import HeaderSocials from "~/components/molecules/HeaderSocials.vue";
-import LanguageDropdown from "~/components/molecules/LanguageDropdown.vue";
-
-export default defineComponent({
-    components: {
-        HeaderMenuItems,
-        HeaderSocials,
-        LanguageDropdown,
-    },
-    setup() {
-        
-    },
-})
-</script>
-
 <style lang="postcss" scoped>
 .header{
     @apply h-24 bg-black flex;
