@@ -28,16 +28,21 @@ export default defineComponent({
 
 <style lang="postcss" scoped>
     .card {
-        @apply w-full h-96 bg-gala-yellow px-4 shadow-md cursor-pointer hover:shadow-2xl;
+        @apply w-full bg-gala-yellow px-4 shadow-md cursor-pointer hover:shadow-2xl;
         &__img {
             @apply object-cover h-full w-full;
             &__container {
-                @apply py-4 h-4/5;
+                @apply pt-4 h-5/6;
             }
         }
         &__title {
             @apply text-2xl font-bold text-gala-red;
-            &__container {}
+            &__container {
+                @apply py-2;
+            }
         }
+    }
+    .card:active {
+        @apply shadow-xl;
     }
 </style>
