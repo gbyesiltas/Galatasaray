@@ -28,7 +28,7 @@ export default defineComponent({
 
 <style lang="postcss" scoped>
     .card {
-        @apply w-full bg-gala-yellow px-4 shadow-md cursor-pointer hover:shadow-2xl;
+        @apply w-full bg-gala-yellow px-4 shadow-md cursor-pointer rounded-md hover:shadow-2xl;
         &__img {
             @apply object-cover h-full w-full;
             &__container {

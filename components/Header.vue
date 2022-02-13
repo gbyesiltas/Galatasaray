@@ -18,7 +18,7 @@
 
 <style lang="postcss" scoped>
 .header{
-    @apply h-24 bg-black flex;
+    @apply h-24 bg-black flex pr-12;
     &__gala-logo {
         @apply h-40 ml-16 z-10;
     }
